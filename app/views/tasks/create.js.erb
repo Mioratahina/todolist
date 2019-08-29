@@ -1,0 +1,2 @@
+alert("Le task va être créé !");
+document.getElementById('<%=@category.title.split(" ")[0]%>').insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %>")

@@ -1,0 +1,10 @@
+var box = document.getElementsByClassName('check-box');
+var li = document.getElementById('<%=@task.id%>');
+if (box.statusValue == 1){
+	li.classList.add('lt');
+	box.statusValue = 0;
+}
+else {
+	li.classList.remove('lt');
+	box.statusValue = 1;
+}

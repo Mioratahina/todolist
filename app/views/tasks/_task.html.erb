@@ -1,0 +1,5 @@
+<li>
+  <%= task.title %>,
+  <%= link_to "Delete", task_path(task.id), remote: true, method: :delete %>
+  <%= check_box_tag :statusValue, 1, false , data: { remote: true, url: task_path(task.id), params: { id: task.id }.to_param, method: "put" }%>
+</li>
